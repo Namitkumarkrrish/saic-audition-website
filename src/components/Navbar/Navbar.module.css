@@ -20,6 +20,7 @@
 
 .home{
   cursor: pointer;
+  font-weight: 600;
 }
 
 .home:hover{
@@ -32,22 +33,27 @@ a{
 
 .links {
   display: flex;
-  gap: 6rem;
+  gap: 4rem;
   list-style: none;
   align-items: center;
 }
 
 .registerBtn {
   padding: 8px 18px;
-  border-radius: 20px;
-  background-color: #00ff88;
-  color: #0b0f1a;
+  /* border-radius: 20px;
+  background-color: #00ff88; */
+  /* color: white; */
   font-weight: 600;
   cursor: pointer;
 }
 
 .registerBtn:hover{
   text-decoration: underline;
+}
+
+.contact{
+  cursor: pointer;
+  font-weight: 600;
 }
 
 .collegeLogo img {

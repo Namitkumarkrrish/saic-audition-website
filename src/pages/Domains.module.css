@@ -1,0 +1,17 @@
+.domainsSection {
+  /* min-height: calc(100vh - 70px); */
+  padding: 30px;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+}
+
+@media (max-width: 768px) {
+  .domainsSection {
+    padding: 100px 24px;
+  }
+}

@@ -1,4 +1,5 @@
 import styles from "./Hero.module.css";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -19,9 +20,10 @@ const Hero = () => {
             Register Now
           </a>
 
-          <a href="#domains" className={styles.secondaryBtn}>
-            Explore Domains
-          </a>
+          <Link to="/domains" className={styles.secondaryBtn}>
+              Explore Domains
+          </Link>
+
         </div>
       </div>
     </section>
