@@ -6,16 +6,14 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <img src={saiclogo} alt="saiclogo" />
+        <img src={saiclogo} alt="saiclogo" className={styles.slogo}/>
       </div>
       <ul className={styles.links}>
         <Link to="/" className={styles.home}>
           Home
         </Link>
         <li className={styles.registerBtn}>
-          <a href="#register">
             Register
-          </a>
         </li>
         <li className={styles.contact}>
           Contact us
