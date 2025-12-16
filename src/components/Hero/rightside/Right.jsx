@@ -1,7 +1,9 @@
 import styles from "./Right.module.css";
 
 const Right = () => {
-  return <div className={styles.rightAnim}></div>;
+  return <div className={styles.rightAnim}>
+    Animation
+  </div>;
 };
 
 

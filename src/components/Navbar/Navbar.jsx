@@ -6,7 +6,9 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <img src={saiclogo} alt="saiclogo" className={styles.slogo}/>
+        <a href="https://www.alumninitdgp.in/" target="_blank" rel="noopener noreferrer">
+          <img src={saiclogo} alt="saiclogo" className={styles.slogo}/>
+        </a>
       </div>
       <ul className={styles.links}>
         <Link to="/" className={styles.home}>
@@ -16,11 +18,13 @@ const Navbar = () => {
             Register
         </li>
         <li className={styles.contact}>
-          Contact us
+          <a href="#contact">Contact Us</a>
         </li>
       </ul>
       <div className={styles.collegeLogo}>
-        <img src={logo} alt="nit logo" />
+        <a href="https://nitdgp.ac.in/" target="blank" rel="noopener noreferrer">
+            <img src={logo} alt="nit logo" />
+        </a>
       </div>
     </nav>
   );

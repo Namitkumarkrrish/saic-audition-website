@@ -1,7 +1,7 @@
 import React from 'react'
 import Left from './leftSide/left'
 import styles from './Hero.module.css'
-import Right from './rightside/right'
+import Right from './rightside/Right'
 
 const hero = () => {
   return (

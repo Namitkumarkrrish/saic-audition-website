@@ -5,9 +5,9 @@
     flex-wrap: wrap;
 }
 .leftPart{
-    max-width: 700px;
+    flex: 1.2;
     padding: 0 30px;
 }
 .rightPart{
-    flex: 1;
+    flex: 0.8;
 }

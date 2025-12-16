@@ -57,10 +57,19 @@ a{
   font-weight: 600;
 }
 
+.contact:hover{
+  text-decoration: underline;
+}
+
 .collegeLogo img {
   height: clamp(30px, 5vw, 50px);
   width: auto;
   padding-right: 20px;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
 }
 
 

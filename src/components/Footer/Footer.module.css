@@ -1,0 +1,63 @@
+.footer {
+  padding: 10px 90px 20px;
+  background: rgba(0, 0, 0, 0.35);
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 28px;
+  margin-bottom: 32px;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.contactCard {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.contactCard h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.contactCard p {
+  font-size: 14px;
+  color: #cfcfcf;
+}
+
+.bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  font-size: 14px;
+  color: #b5b5b5;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer {
+    padding: 60px 24px 30px;
+  }
+
+  .contacts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .contacts {
+    grid-template-columns: 1fr;
+  }
+}

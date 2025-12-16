@@ -8,7 +8,27 @@ body {
   background: radial-gradient(
     circle at top right,
     #0f3d2e,
-    #05070f 60%
+    #101a1f 60%
   );
-  background-attachment: fixed;
+  animation: gradientMove 5s ease infinite;
+
+  opacity: 0.85;
+  background-size: 200% 200%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

@@ -1,0 +1,29 @@
+.statement {
+  width: 100%;
+  padding: 60px 40px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #0a3d2e, #062018);
+
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: clamp(36px, 4vw, 50px);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #e3c04b;
+  display: flex;
+  flex-direction: column;
+}
+.statement span{
+  color: #e6c36a;
+}
+
+#s1{
+  color: #d6a63f;
+}
