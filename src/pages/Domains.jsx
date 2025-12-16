@@ -33,6 +33,11 @@ const domains = [
       "Create engaging videos, reels, and after-movies for SAIC.",
     icon: "🎬",
   },
+  {
+    title: "VideoGraphy/PhotoGraphy",
+    description: "Capture moments, events, and stories through compelling photography and videography.",
+    icon: "📷",
+  }
 ];
 
 const Domains = () => {
