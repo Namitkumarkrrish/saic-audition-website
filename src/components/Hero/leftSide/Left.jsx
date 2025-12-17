@@ -15,9 +15,9 @@ const Left = () => {
         </p>
 
         <div className={styles.buttons}>
-          <a href="#register" className={styles.primaryBtn}>
+          <Link to="/apply" className={styles.primaryBtn}>
             Register Now
-          </a>
+          </Link>
 
           <Link to="/domains" className={styles.secondaryBtn}>
               Explore Domains
