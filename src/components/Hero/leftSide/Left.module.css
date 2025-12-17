@@ -29,6 +29,7 @@
   color: #c9c9c9;
   line-height: 1.6;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .buttons {
@@ -70,7 +71,7 @@
 
 /* HERO */
   .hero {
-    padding: 0 20px;
+    /* padding: 0 20px; */
     min-height: auto;
     padding-top: 40px; /* space for navbar */
   }

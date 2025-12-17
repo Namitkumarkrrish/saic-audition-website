@@ -1,19 +1,18 @@
-import React from 'react'
-import Left from './leftSide/left'
-import styles from './Hero.module.css'
-import Right from './rightside/Right'
+import Left from "./leftSide/Left";
+import Right from "./rightside/Right";
+import styles from "./Hero.module.css";
 
-const hero = () => {
+const Hero = () => {
   return (
-    <div className={styles.main}>
-        <div className={styles.leftPart}>
-            <Left />
-        </div>
-        <div className={styles.rightPart}>
-            <Right />
-        </div>
-    </div>
-  )
-}
+    <section className={styles.main}>
+      <div className={styles.leftPart}>
+        <Left />
+      </div>
+      <div className={styles.rightPart}>
+        <Right />
+      </div>
+    </section>
+  );
+};
 
-export default hero
+export default Hero;

@@ -1,14 +1,40 @@
-.main{
+.main {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+/* Desktop */
+.leftPart {
+  flex: 1.2;
+  /* padding: 0 30px; */
+}
+
+.rightPart {
+  flex: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ========================= */
+/* 📱 Mobile & Tablet */
+/* ========================= */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;   /* stack */
+    align-items: center;
+  }
+
+  .leftPart {
     width: 100%;
-    display: flex;
-    margin-bottom: 40px;
-    flex-wrap: wrap;
-    margin-top: 40px;
-}
-.leftPart{
-    flex: 1.2;
-    padding: 0 30px;
-}
-.rightPart{
-    flex: 0.8;
+    /* padding: 0 20px; */
+  }
+
+  .rightPart {
+    width: 100%;
+    max-width: 300px;         /* keeps animation sane */
+    margin-top: 20px;
+  }
 }
