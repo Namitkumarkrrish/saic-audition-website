@@ -15,7 +15,7 @@ const Apply=()=>{
             <div className={styles.field}>
               <label>Year Of Study <span className={styles.required}>*</span></label>
               <select name="entry.1065046570"  required>
-                <option value="" disabled selected style={{color:"white"}}>Select your year</option>
+                <option value="" disabled selected style={{color:"rgba(255, 255, 255, 0.6);"}}>Select your year</option>
                 <option style={{color:"black"}} value="1st Year">1st Year</option>
                 <option style={{color:"black"}} value="2nd Year">2nd Year</option>
                 <option style={{color:"black"}} value="3rd Year">3rd Year</option>
@@ -32,7 +32,7 @@ const Apply=()=>{
         {/* SECTION 2 */}
             
             <div className={styles.ratingRow}>
-  <label>Video Editing <span>*</span></label>
+  <label>Anchoring <span>*</span></label>
 
   <div className={styles.options}>
     <label><input type="radio" name="entry.439228923" value="1" required />1</label>
@@ -43,7 +43,7 @@ const Apply=()=>{
     <label><input type="radio" name="entry.439228923" value="6" />6</label>
     <label><input type="radio" name="entry.439228923" value="7" />7</label>
   </div>
-  <label>Anchoring <span>*</span></label>
+  <label>Video Editing <span>*</span></label>
   <div className={styles.options}>
     <label><input type="radio" name="entry.627455496" value="1" required />1</label>
     <label><input type="radio" name="entry.627455496" value="2" />2</label>
@@ -53,7 +53,7 @@ const Apply=()=>{
     <label><input type="radio" name="entry.627455496" value="6" />6</label>
     <label><input type="radio" name="entry.627455496" value="7" />7</label>
   </div>
-  <label>graphics designing <span>*</span></label>
+  <label>Graphics Designing <span>*</span></label>
   <div className={styles.options}>
     <label><input type="radio" name="entry.1505286642" value="1" required />1</label>
     <label><input type="radio" name="entry.1505286642" value="2" />2</label>
@@ -63,7 +63,7 @@ const Apply=()=>{
     <label><input type="radio" name="entry.1505286642" value="6" />6</label>
     <label><input type="radio" name="entry.1505286642" value="7" />7</label>
   </div>
-  <label>Web dev <span>*</span></label>
+  <label>Web Development <span>*</span></label>
   <div className={styles.options}>
     <label><input type="radio" name="entry.873966814" value="1" required />1</label>
     <label><input type="radio" name="entry.873966814" value="2" />2</label>
@@ -73,7 +73,7 @@ const Apply=()=>{
     <label><input type="radio" name="entry.873966814" value="6" />6</label>
     <label><input type="radio" name="entry.873966814" value="7" />7</label>
   </div>
-  <label>Event management <span>*</span></label>
+  <label>Event Management <span>*</span></label>
   <div className={styles.options}>
     <label><input type="radio" name="entry.361907886" value="1" required />1</label>
     <label><input type="radio" name="entry.361907886" value="2" />2</label>
@@ -83,7 +83,7 @@ const Apply=()=>{
     <label><input type="radio" name="entry.361907886" value="6" />6</label>
     <label><input type="radio" name="entry.361907886" value="7" />7</label>
   </div>
-  <label>photo/video <span>*</span></label>
+  <label>PhotoGraphy/Videography <span>*</span></label>
   <div className={styles.options}>
     <label><input type="radio" name="entry.199335614" value="1" required />1</label>
     <label><input type="radio" name="entry.199335614" value="2" />2</label>
