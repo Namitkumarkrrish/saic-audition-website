@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import networkAnimation from "../../../assets/network.json";
+import networkAnimation from "../../../assets/GoldNetwork.json";
 import styles from './Right.module.css'
 
 const Right = () => {
