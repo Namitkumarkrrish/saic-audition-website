@@ -5,7 +5,7 @@ import img1 from "../../assets/Alumination.jpeg";
 import img2 from "../../assets/Convo.jpeg";
 import img3 from "../../assets/GlobalAlumniMeet.jpeg";
 import img4 from "../../assets/Stamp.jpeg";
-import img5 from "../../assets/NetworkingPitch.jpg";
+import img5 from "../../assets/NetworkingPitch.JPG";
 
 
 const images = [
