@@ -1,12 +1,11 @@
 import { useState } from "react";
 import styles from "./EventsCarousel.module.css";
 
-// import your images
-import img1 from "../../assets/events/Alumination.jpeg";
-import img2 from "../../assets/events/Convo.jpeg";
-import img3 from "../../assets/events/GlobalAlumniMeet.jpeg";
-import img4 from "../../assets/events/Stamp.jpeg";
-import img5 from "../../assets/events/NetworkingPitch.jpg";
+import img1 from "../../assets/Alumination.jpeg";
+import img2 from "../../assets/Convo.jpeg";
+import img3 from "../../assets/GlobalAlumniMeet.jpeg";
+import img4 from "../../assets/Stamp.jpeg";
+import img5 from "../../assets/NetworkingPitch.jpg";
 
 
 const images = [
