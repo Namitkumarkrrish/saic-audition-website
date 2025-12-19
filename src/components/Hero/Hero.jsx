@@ -1,5 +1,5 @@
 import Left from "./leftSide/Left";
-import Right from "./rightSide/Right";
+import Right from "./rightside/Right";
 import styles from "./Hero.module.css";
 
 const Hero = () => {
