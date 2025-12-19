@@ -8,12 +8,10 @@ body {
   background: radial-gradient(
     circle at top right,
     #0f3d2e,
-    #101a1f 60%
+    #0b1f17 55%
   );
-  animation: gradientMove 5s ease infinite;
-
-  opacity: 0.85;
-  background-size: 200% 200%;
+  background-size: 300% 300%;
+  animation: gradientMove 8s ease-in-out infinite;
 }
 
 html {
@@ -26,16 +24,45 @@ html {
   box-sizing: border-box;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 215, 0, 0.08),
+    transparent 60%
+  );
+  animation: pulse 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
 
 
 @keyframes gradientMove {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 0%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 100% 100%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 0% 0%;
   }
 }
+
+@media (max-width: 768px) {
+  body {
+    background-size: 400% 400%;
+    animation: gradientMove 5s linear infinite;
+  }
+}
+
