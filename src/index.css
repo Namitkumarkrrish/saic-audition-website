@@ -11,7 +11,7 @@ body {
     #0b1f17 55%
   );
   background-size: 300% 300%;
-  animation: gradientMove 8s ease-in-out infinite;
+  animation: gradientMove 6s ease-in-out infinite;
 }
 
 html {

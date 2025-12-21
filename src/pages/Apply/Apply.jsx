@@ -122,6 +122,7 @@ const Apply=()=>{
               placeholder="Your favorite anime/movie/tv show (optional)"
               rows="1"
               name="entry.1825280227"
+              style={{height:"65.33px"}}
             ></textarea>
 
             <div className={styles.navBtns}>

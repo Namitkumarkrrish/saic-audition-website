@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  padding: 40px 20px 80px;
+  padding: 80px 20px 80px;
   color: #fff;
   overflow-x: hidden;
 }
@@ -23,7 +23,6 @@
   gap: 18px;
 }
 
-/* Inputs & Textareas */
 .form input,
 .form select,
 .form textarea {
@@ -49,7 +48,7 @@
   background: rgba(255, 255, 255, 0.08);
 }
 
-/* Dropdown field */
+
 .field {
   display: flex;
   flex-direction: column;
@@ -64,7 +63,6 @@
   color: #ff4d4d;
 }
 
-/* Rating Section */
 .ratingRow {
   margin-top: 10px;
 }
@@ -75,7 +73,7 @@
   font-size: 14px;
 }
 
-/* Radio options */
+
 .options {
   display: flex;
   flex-wrap: wrap;
@@ -99,7 +97,6 @@
   cursor: pointer;
 }
 
-/* Submit button */
 .navBtns {
   margin-top: 30px;
   display: flex;
@@ -123,13 +120,9 @@
   box-shadow: 0 10px 25px rgba(34, 197, 94, 0.3);
 }
 
-/* ======================
-   MOBILE RESPONSIVE
-   ====================== */
-
 @media (max-width: 600px) {
   .applySection {
-    padding: 24px 14px 60px;
+    padding: 80px 14px 60px;
   }
 
   .applySection h1 {

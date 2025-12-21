@@ -9,6 +9,18 @@
   align-items: center;
   color: white;
   z-index: 1000;
+  background: radial-gradient(
+    circle at top right,
+    rgba(15, 61, 46, 0.85),
+    rgba(11, 31, 23, 0.85) 55%
+  );
+  backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+border-bottom: 1px solid rgba(255, 215, 0, 0.15);
+border-radius: 20px;
+
+
 }
 .logo img {
   height: clamp(32px, 4vw, 44px);
@@ -21,10 +33,6 @@
   cursor: pointer;
   font-weight: 600;
   color: white;
-}
-
-.home:hover{
-  text-decoration: underline;
 }
 
 a{
@@ -40,25 +48,13 @@ a{
 }
 
 .registerBtn {
-  /* padding: 8px 18px; */
-  /* border-radius: 20px;
-  background-color: #00ff88; */
-  /* color: white; */
   font-weight: 600;
   cursor: pointer;
-}
-
-.registerBtn:hover{
-  text-decoration: underline;
 }
 
 .contact{
   cursor: pointer;
   font-weight: 600;
-}
-
-.contact:hover{
-  text-decoration: underline;
 }
 
 .collegeLogo img {
@@ -73,8 +69,27 @@ a {
 }
 .registerBtn,.home,.contact{
   font-size: 20px;
+  position: relative;
 }
 
+.home::after,
+.registerBtn::after,
+.contact::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: gold;
+  transition: width 0.3s ease;
+}
+
+.home:hover::after,
+.registerBtn:hover::after,
+.contact:hover::after {
+  width: 100%;
+}
 
 
 @media (max-width: 768px) {
@@ -95,14 +110,12 @@ a {
   }
 
   .registerBtn,.home,.contact {
-    /* padding: 6px 14px; */
     font-size: 15px;
   }
 }
 
 @media(max-width: 340px){
   .registerBtn,.home,.contact {
-    /* padding: 6px 14px; */
     font-size: 13px;
   }
 }
