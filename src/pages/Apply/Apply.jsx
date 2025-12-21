@@ -30,7 +30,7 @@ const Apply=()=>{
             <input name="entry.839337160" type="tel" placeholder="WhatsApp Number" required />
 
         {/* SECTION 2 */}
-            
+            <h4 style={{margin:"1rem 0"}}>Give priority as per your choice . 1 means highest priority and 6 means lowest. If you are not interested in that domain select 7.</h4>
             <div className={styles.ratingRow}>
   <label>Anchoring <span>*</span></label>
 
