@@ -18,8 +18,6 @@ const Apply=()=>{
                 <option value="" disabled selected style={{color:"rgba(255, 255, 255, 0.6);"}}>Select your year</option>
                 <option style={{color:"black"}} value="1st Year">1st Year</option>
                 <option style={{color:"black"}} value="2nd Year">2nd Year</option>
-                <option style={{color:"black"}} value="3rd Year">3rd Year</option>
-                <option style={{color:"black"}} value="4th Year">4th Year</option>
               </select>
             </div>
 
