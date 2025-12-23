@@ -6,8 +6,8 @@ const contacts = [
     detail: "+91 93684 65569",
   },
   {
-    title: "Namit Kumar Krrish",
-    detail: "893684355",
+    title: "Vivek Munda",
+    detail: "+91 78569 32916",
   },
 ];
 
