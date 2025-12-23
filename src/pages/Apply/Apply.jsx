@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Apply.module.css';
 
-
 const Apply = () => {
   const [gender, setGender] = useState('');
   const [prefs, setPrefs] = useState([]);
@@ -379,7 +378,7 @@ const Apply = () => {
           </p>
           <button
             className={styles.submitBtn}
-            onClick={() => window.location.reload()}
+            onClick={() => window.location.href="http://localhost:5173/"}
             style={{ marginTop: 0 }}
           >
             Close
