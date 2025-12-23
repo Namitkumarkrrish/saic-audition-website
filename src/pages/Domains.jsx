@@ -50,6 +50,16 @@ const domains = [
 
 const Domains = () => {
   return (
+    <>
+    <div className="pageWrapper">
+          {/* Lava Background */}
+                <div className={styles.lavaBg}>
+                  <div className={styles.blob}></div>
+                  <div className={styles.blob}></div>
+                  <div className={styles.blob}></div>
+                  <div className={styles.blob}></div>
+                  <div className={styles.blob}></div>
+                </div>
     <section className={styles.domainsSection}>
       <DomainMsg />
 
@@ -64,6 +74,8 @@ const Domains = () => {
         ))}
       </div>
     </section>
+    </div>
+    </>
   );
 };
 

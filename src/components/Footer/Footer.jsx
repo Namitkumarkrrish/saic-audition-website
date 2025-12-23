@@ -2,20 +2,12 @@ import styles from "./Footer.module.css";
 
 const contacts = [
   {
-    title: "Contact Person 1",
-    detail: "Phone / Email here",
+    title: "Sambhav Gupta",
+    detail: "+91 93684 65569",
   },
   {
-    title: "Contact Person 2",
-    detail: "Phone / Email here",
-  },
-  {
-    title: "Contact Person 3",
-    detail: "Phone / Email here",
-  },
-  {
-    title: "Contact Person 4",
-    detail: "Phone / Email here",
+    title: "Namit Kumar Krrish",
+    detail: "893684355",
   },
 ];
 

@@ -4,29 +4,19 @@ import saiclogo from "../../assets/saiclogo.png";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.logo}>
-        <a href="https://www.alumninitdgp.in/" target="_blank" rel="noopener noreferrer">
-          <img src={saiclogo} alt="saiclogo" className={styles.slogo}/>
+      <nav className={styles.navbar}>
+        <a href="https://www.alumninitdgp.in/" className={styles.navItemRound}>
+          <img src={saiclogo} alt="SAIC Logo" className={styles.navLogo} />
         </a>
-      </div>
-      <ul className={styles.links}>
-        <Link to="/" className={styles.home}>
-          Home
-        </Link>
-        <Link to="/apply" className={styles.registerBtn}>
-            Register
-        </Link>
-        <li className={styles.contact}>
-          <a href="#contact">Contact Us</a>
-        </li>
-      </ul>
-      <div className={styles.collegeLogo}>
-        <a href="https://nitdgp.ac.in/" target="blank" rel="noopener noreferrer">
-            <img src={logo} alt="nit logo" />
+        
+        <div className={styles.navPillMain}>
+          SAIC Audition 2K26
+        </div>
+        
+        <a href="https://nitdgp.ac.in/" className={styles.navItemRound}>
+          <img src={logo} alt="NIT Durgapur Logo" className={styles.navLogo} />
         </a>
-      </div>
-    </nav>
+      </nav>
   );
 };
 

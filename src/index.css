@@ -3,15 +3,29 @@ html, body, #root {
   color: white;
 }
 
+:root {
+    --gold: #d4af37;
+    --glass-bg: rgba(10, 30, 20, 0.55);
+    --glass-border: rgba(255, 255, 255, 0.12);
+    --glass-blur: blur(22px);
+    --text-light: #ffffff;
+    --text-muted: #a0b0a8;
+    
+    /* Gender Colors */
+    --boy-blue: #3b82f6;
+    --girl-pink: #ec4899;
+
+    /* Domain Glows */
+    --glow-indigo: #818cf8;
+    --glow-red: #f87171;
+    --glow-yellow: #fbbf24;
+}
+
+
 body {
   margin: 0;
-  background: radial-gradient(
-    circle at top right,
-    #0f3d2e,
-    #0b1f17 55%
-  );
-  background-size: 300% 300%;
-  animation: gradientMove 6s ease-in-out infinite;
+  background: radial-gradient(circle at 50% 0%, #0a2e24 0%, #02120f 100%);
+
 }
 
 html {
@@ -35,34 +49,5 @@ body::before {
   );
   animation: pulse 6s ease-in-out infinite;
   pointer-events: none;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    opacity: 0.4;
-  }
-  50% {
-    opacity: 0.8;
-  }
-}
-
-
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-    background-size: 400% 400%;
-    animation: gradientMove 5s linear infinite;
-  }
 }
 

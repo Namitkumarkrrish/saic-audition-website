@@ -1,121 +1,78 @@
+/* --- NAVBAR (Mobile Optimized) --- */
 .navbar {
-  position: fixed;     
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  z-index: 1000;
-  background: radial-gradient(
-    circle at top right,
-    rgba(15, 61, 46, 0.85),
-    rgba(11, 31, 23, 0.85) 55%
-  );
-  backdrop-filter: blur(20px);
--webkit-backdrop-filter: blur(20px);
-box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
-border-bottom: 1px solid rgba(255, 215, 0, 0.15);
-border-radius: 20px;
-
-
-}
-.logo img {
-  height: clamp(32px, 4vw, 44px);
-  width: auto;
-  object-fit: contain;
-  padding-left: 20px;
+    position: fixed; 
+    top: 25px; 
+    z-index: 100;
+    display: flex; 
+    align-items: center; 
+    gap: 12px;
+    transition: 0.3s ease-in-out;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    justify-content: center;
 }
 
-.home{
-  cursor: pointer;
-  font-weight: 600;
-  color: white;
+.navItemRound {
+    width: 55px; 
+    height: 55px; 
+    border-radius: 50%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    background: var(--glass-bg); 
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border); 
+    color: var(--gold);
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    flex-shrink: 0;
 }
 
-a{
-  text-decoration: none;
+.navLogo {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    opacity: 0.9;
+    transition: 0.3s ease;
 }
 
-.links {
-  display: flex;
-  gap: 4rem;
-  list-style: none;
-  align-items: center;
-  padding: 0;
+.navItemRound:hover .navLogo {
+    transform: scale(1.1);
+    opacity: 1;
 }
 
-.registerBtn {
-  font-weight: 600;
-  cursor: pointer;
+.navPillMain { 
+    background: var(--glass-bg); 
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    color: var(--gold); 
+    font-weight: 700; 
+    letter-spacing: 1px; 
+    padding: 15px 20px;
+    border-radius: 50px; 
+    font-size: 1rem;
+    white-space: nowrap; 
+    transition: 0.3s ease-in-out;
+    text-overflow: ellipsis;
 }
 
-.contact{
-  cursor: pointer;
-  font-weight: 600;
-}
-
-.collegeLogo img {
-  height: clamp(30px, 5vw, 50px);
-  width: auto;
-  padding-right: 20px;
-}
-
-a {
-  all: unset;
-  cursor: pointer;
-}
-.registerBtn,.home,.contact{
-  font-size: 20px;
-  position: relative;
-}
-
-.home::after,
-.registerBtn::after,
-.contact::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 0;
-  height: 2px;
-  background: gold;
-  transition: width 0.3s ease;
-}
-
-.home:hover::after,
-.registerBtn:hover::after,
-.contact:hover::after {
-  width: 100%;
-}
-
-
-@media (max-width: 768px) {
-
-  .otherInfo {
-    width: auto;
-    gap: 2rem;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .links {
-    gap: 1.5rem;
-  }
-
-  .logo {
-    font-size: 18px;
-  }
-
-  .registerBtn,.home,.contact {
-    font-size: 15px;
-  }
-}
-
-@media(max-width: 340px){
-  .registerBtn,.home,.contact {
-    font-size: 13px;
-  }
+/* --- NAVBAR DESKTOP TUNING --- */
+@media (min-width: 768px) {
+    .navbar {
+        gap: 50px; 
+        /* top: 40px; */
+        width: auto;
+    }
+    .navPillMain {
+        padding: 20px 70px; 
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+    .navItemRound {
+        width: 70px; 
+        height: 70px;
+    }
 }
