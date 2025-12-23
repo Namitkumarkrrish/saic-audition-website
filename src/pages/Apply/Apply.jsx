@@ -378,7 +378,7 @@ const Apply = () => {
           </p>
           <button
             className={styles.submitBtn}
-            onClick={() => window.location.href="http://localhost:5173/"}
+            onClick={() => window.location.href="https://saic-audition-website-362h.vercel.app/"}
             style={{ marginTop: 0 }}
           >
             Close
